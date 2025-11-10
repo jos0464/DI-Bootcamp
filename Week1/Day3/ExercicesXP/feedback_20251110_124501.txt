@@ -1,0 +1,7 @@
+URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week1/Day3/ExercicesXP/exercices.py
+Brief justification:
+- correctness: The code correctly implements all the exercises as described in the prompt, including the bonus parts. Each exercise demonstrates the intended Python topics (dictionaries, loops, conditionals, etc.) and produces the expected outputs. The code addresses all instructions comprehensively.
+- readability: The code is well-structured and clearly commented, making it easy to understand. Variable names are descriptive, and the code is organized into logical blocks for each exercise.
+- performance: The code's performance is efficient for the given tasks. It uses appropriate methods like `zip()` and dictionary comprehension for optimal dictionary creation. The looping and conditional logic are straightforward and do not introduce unnecessary overhead.
+- security: The code doesn't involve any external input (except for the optional bonus in Exercise 2) or operations that could pose a security risk. It focuses on data manipulation within the script and doesn't interact with any system-level functions or network resources.
+
