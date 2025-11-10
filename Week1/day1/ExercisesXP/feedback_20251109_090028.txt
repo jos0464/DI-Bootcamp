@@ -1,0 +1,7 @@
+URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week1/day1/ExercisesXP/daily.py
+Brief justification:
+- correctness: The code accurately and completely addresses all the requirements outlined in the chapter content, including user input validation, string length check, printing the first and last characters, building the string character by character using a loop, and the bonus of shuffling the string. Each step is correctly implemented according to the instructions.
+- readability: The code is well-structured and easy to understand, with clear comments explaining each step. Variable names are descriptive, and the code is logically organized.
+- performance: The code has optimal performance for the given task. The algorithms used (string slicing, loop iteration, and shuffle) are efficient for the problem size.
+- security: The code does not have any security vulnerabilities. It handles user input without any risks of injection or other common issues.
+
