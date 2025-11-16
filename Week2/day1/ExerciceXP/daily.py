@@ -1,147 +1,98 @@
-# --------------------------
-# Exercise 1: Cats
-# --------------------------
+# ======================================
+# Définition de la classe Farm
+# ======================================
+class Farm:
+    def __init__(self, farm_name):
+        """
+        Constructeur : initialise le nom de la ferme et le dictionnaire d'animaux vide
+        """
+        self.name = farm_name
+        self.animals = {}  # dictionnaire : clé = type d'animal, valeur = quantité
 
-# Définition de la classe Cat
-class Cat:
-    def __init__(self, cat_name, cat_age):
-        # Attributs pour le nom et l'âge du chat
-        self.name = cat_name
-        self.age = cat_age
+    # Méthode pour ajouter un animal ou plusieurs animaux
+    def add_animal(self, animal_type=None, count=1, **kwargs):
+        """
+        Ajoute un ou plusieurs animaux à la ferme.
+        - animal_type et count permettent d'ajouter un animal simple
+        - kwargs permet d'ajouter plusieurs animaux : animal=quantité
+        """
+        # Ajouter un animal simple
+        if animal_type:
+            if animal_type in self.animals:
+                self.animals[animal_type] += count
+            else:
+                self.animals[animal_type] = count
 
-# Création de 3 objets Cat
-cat1 = Cat("Whiskers", 3)
-cat2 = Cat("Tom", 5)
-cat3 = Cat("Garfield", 7)
+        # Ajouter plusieurs animaux via kwargs
+        for key, value in kwargs.items():
+            if key in self.animals:
+                self.animals[key] += value
+            else:
+                self.animals[key] = value
 
-# Fonction pour trouver le chat le plus âgé
-def find_oldest_cat(cat1, cat2, cat3):
-    # Comparer les âges et retourner le chat le plus âgé
-    oldest = cat1
-    if cat2.age > oldest.age:
-        oldest = cat2
-    if cat3.age > oldest.age:
-        oldest = cat3
-    return oldest
+    # Méthode pour afficher les informations complètes de la ferme
+    def get_info(self):
+        """
+        Retourne une chaîne avec le nom de la ferme, les animaux et leurs quantités
+        et la phrase E-I-E-I-0!
+        """
+        output = f"{self.name}'s farm\n\n"
+        for animal, count in self.animals.items():
+            output += f"{animal} : {count}\n"
+        output += "\n    E-I-E-I-0!"
+        return output
 
-# Affichage du chat le plus âgé
-oldest_cat = find_oldest_cat(cat1, cat2, cat3)
-print(f"The oldest cat is {oldest_cat.name}, and is {oldest_cat.age} years old.")
+    # Méthode pour retourner une liste triée des types d'animaux
+    def get_animal_types(self):
+        """
+        Retourne la liste triée des types d'animaux
+        """
+        return sorted(self.animals.keys())
 
-
-# --------------------------
-# Exercise 2: Dogs
-# --------------------------
-
-class Dog:
-    def __init__(self, name, height):
-        # Attributs du chien : nom et taille
-        self.name = name
-        self.height = height
-
-    # Méthode pour aboyer
-    def bark(self):
-        print(f"{self.name} goes woof!")
-
-    # Méthode pour sauter
-    def jump(self):
-        print(f"{self.name} jumps {self.height * 2} cm high!")
-
-# Création des objets Dog
-davids_dog = Dog("Rex", 50)
-sarahs_dog = Dog("Buddy", 40)
-
-# Affichage des détails et appel des méthodes
-print(davids_dog.name, davids_dog.height)
-davids_dog.bark()
-davids_dog.jump()
-
-print(sarahs_dog.name, sarahs_dog.height)
-sarahs_dog.bark()
-sarahs_dog.jump()
-
-# Comparer les tailles
-if davids_dog.height > sarahs_dog.height:
-    print(f"{davids_dog.name} is bigger")
-else:
-    print(f"{sarahs_dog.name} is bigger")
-
-
-# --------------------------
-# Exercise 3: Song
-# --------------------------
-
-class Song:
-    def __init__(self, lyrics):
-        # Attribut pour stocker les paroles (liste)
-        self.lyrics = lyrics
-
-    # Méthode pour chanter
-    def sing_me_a_song(self):
-        for line in self.lyrics:
-            print(line)
-
-# Exemple de création de la chanson
-stairway = Song([
-    "There’s a lady who's sure",
-    "all that glitters is gold",
-    "and she’s buying a stairway to heaven"
-])
-stairway.sing_me_a_song()
+    # Méthode pour retourner un résumé court
+    def get_short_info(self):
+        """
+        Retourne une phrase résumant la ferme et ses animaux,
+        en ajoutant un 's' si le nombre d'animaux est > 1
+        """
+        types = self.get_animal_types()
+        parts = []
+        for animal in types:
+            # Ajouter 's' si plus d'un animal
+            name = animal + "s" if self.animals[animal] > 1 else animal
+            parts.append(name)
+        
+        # Formater la phrase avec des virgules et 'and'
+        if len(parts) > 1:
+            sentence = ", ".join(parts[:-1]) + " and " + parts[-1]
+        else:
+            sentence = parts[0]
+        
+        return f"{self.name}'s farm has {sentence}."
 
 
-# --------------------------
-# Exercise 4: Zoo
-# --------------------------
+# ======================================
+# Test du code
+# ======================================
 
-class Zoo:
-    def __init__(self, zoo_name):
-        # Nom du zoo et liste pour stocker les animaux
-        self.name = zoo_name
-        self.animals = []
-
-    # Ajouter un ou plusieurs animaux
-    def add_animal(self, *new_animals):
-        for animal in new_animals:
-            if animal not in self.animals:
-                self.animals.append(animal)
-
-    # Afficher tous les animaux
-    def get_animals(self):
-        print(self.animals)
-
-    # Vendre (retirer) un animal
-    def sell_animal(self, animal_sold):
-        if animal_sold in self.animals:
-            self.animals.remove(animal_sold)
-
-    # Trier les animaux et les grouper par première lettre
-    def sort_animals(self):
-        self.animals.sort()
-        grouped = {}
-        for animal in self.animals:
-            key = animal[0].upper()
-            if key not in grouped:
-                grouped[key] = []
-            grouped[key].append(animal)
-        self.grouped_animals = grouped
-
-    # Afficher les groupes
-    def get_groups(self):
-        for key, value in self.grouped_animals.items():
-            print(f"{key}: {value}")
-
-# Création d'un objet Zoo
-brooklyn_safari = Zoo("Brooklyn Safari")
+# Création de la ferme
+macdonald = Farm("McDonald")
 
 # Ajouter des animaux
-brooklyn_safari.add_animal("Giraffe", "Bear", "Baboon", "Cat", "Cougar")
-brooklyn_safari.get_animals()
+macdonald.add_animal('cow', 5)
+macdonald.add_animal('sheep')
+macdonald.add_animal('sheep')
+macdonald.add_animal('goat', 12)
 
-# Vendre un animal
-brooklyn_safari.sell_animal("Bear")
-brooklyn_safari.get_animals()
+# Afficher les informations complètes
+print(macdonald.get_info())
 
-# Trier et grouper les animaux
-brooklyn_safari.sort_animals()
-brooklyn_safari.get_groups()
+print("\n--- Short info ---")
+# Afficher le résumé court
+print(macdonald.get_short_info())
+
+print("\n--- Utilisation de kwargs ---")
+# Ajouter plusieurs animaux en même temps via kwargs
+macdonald.add_animal(chicken=6, pig=3)
+print(macdonald.get_info())
+print(macdonald.get_short_info())
