@@ -1,0 +1,12 @@
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/checker/anagram_checker.py
+suggestions for improvement:
+- Consider adding more robust error handling for file operations, such as handling permission errors or corrupted files.
+- The performance is generally good due to the use of sets for word lookup, but for very large word lists, consider more advanced data structures or algorithms.
+Correctness: 100%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/checker/anagrams.py
+suggestions for improvement:
+- Consider adding more comprehensive error handling, such as handling file I/O exceptions during AnagramChecker initialization.
+- The code could benefit from more comments, especially within the `main` function to clarify the program flow.
+Correctness: 100%
+-----

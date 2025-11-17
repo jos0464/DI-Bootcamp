@@ -1,0 +1,10 @@
+URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week1/day5/ExercicesXP/project1.py
+suggestions for improvement:
+- Consider adding input validation to `player_turn` to handle non-integer inputs or positions outside the valid range (1-9).
+- While the game works, using a dictionary for the board representation is less conventional than a 2D list as suggested. While functionally correct, consider if a list of lists would align better with the prompt's intention.
+Brief justification:
+- correctness: The code correctly implements a Tic Tac Toe game, allowing two players to take turns, checking for a winner, and handling ties, which aligns perfectly with the instructions provided. It covers all the steps outlined in the prompt, from representing the board to implementing the main game loop.
+- readability: The code is well-structured and uses meaningful variable names, making it easy to understand. The functions are clearly defined, and the comments explain the purpose of each section. Only minor improvements are possible, like adding more comments to further clarify the logic in specific parts of the functions.
+- performance: The performance is adequate for a simple Tic Tac Toe game. The code uses efficient data structures and algorithms for the task at hand. There are no major performance bottlenecks.
+- security: The code is reasonably secure. The input validation in the `player_turn` function prevents some basic errors. However, it could be improved to handle invalid inputs such as non-integer values or out-of-range numbers, preventing potential crashes.
+

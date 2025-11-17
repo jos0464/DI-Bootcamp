@@ -1,0 +1,32 @@
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/anagram_checker.py
+suggestions for improvement:
+- Consider using a more robust method for file handling, such as try-except blocks, to catch potential `FileNotFoundError` exceptions.
+- For larger word lists, consider using a dictionary with character counts as keys for `is_anagram`, which could improve performance.
+- The docstrings are in French, while the rest of the code is in English; choose one language for consistency.
+Correctness: 100%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/daily.py
+suggestions for improvement:
+- The code is well-structured and easy to understand.
+- The code addresses a card game scenario rather than the Anagram Checker requirements. The task requires the creation of two python files - anagram_checker.py and anagrams.py, with specific methods in the AnagramChecker class. This is completely missing in the submitted code.
+Correctness: 0%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/project1.py
+suggestions for improvement:
+- Consider adding more comprehensive error handling, such as handling file not found exceptions when the AnagramChecker class initializes.
+- The main function can be further modularized for better readability and maintainability.
+Correctness: 100%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/project2.py
+suggestions for improvement:
+- This code implements a Rock-Paper-Scissors game, which is completely unrelated to the anagram checker project described in the chapter content.
+- The chapter content focuses on OOP (Classes, Methods), File I/O (Reading Files), String Manipulation, Algorithm Design (Anagram Checking), User Input and Validation, Conditional Logic, and Loops. This code does not address the core topic of anagram checking.
+- The entire structure of the submission, focusing on a different game, makes it impossible to adapt to the task at hand.
+Correctness: 0%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/words.txt
+suggestions for improvement:
+- The provided code is just a list of words and does not implement any of the required functionality (AnagramChecker class, methods, UI in anagrams.py).
+- The provided words are not part of a functional program that can check for anagrams or validate user input as specified in the instructions.
+Correctness: 0.0%
+-----

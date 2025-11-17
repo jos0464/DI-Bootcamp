@@ -1,0 +1,12 @@
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/rock/game.py
+suggestions for improvement:
+- Consider adding comments to explain the logic in `get_game_result` for better readability.
+- The code could benefit from some refactoring to avoid long lines in the `get_game_result` method. You could create a helper function or use a dictionary to define the winning conditions.
+Correctness: 100%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/rock/rock-paper-scissors.py
+suggestions for improvement:
+- Consider using an enum or constants for menu choices instead of hardcoded strings ('1', '2', '3') to improve readability and maintainability.
+- Add input validation to ensure `results` dictionary has 'win', 'loss', and 'draw' keys before attempting to print. While the current implementation initializes it correctly, unexpected inputs could cause errors.
+Correctness: 100%
+-----
