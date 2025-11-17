@@ -1,0 +1,27 @@
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/anagram_checker.py
+suggestions for improvement:
+- The provided code implements an AnagramChecker class, which is completely unrelated to the chapter's content on OOP concepts, data structures (lists), and random number generation for creating a deck of cards.
+- The code does not address the exercises outlined in the chapter, specifically creating Card and Deck classes with shuffle and deal methods.
+Correctness: 0%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/daily.py
+suggestions for improvement:
+- Consider adding docstrings to the Deck class methods (shuffle and deal) to further improve readability.
+Correctness: 100%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/project1.py
+suggestions for improvement:
+- The submitted code is completely unrelated to the chapter's content. It's an anagram checker, not a deck of cards or an illustration of OOP principles, data structures, or random number generation as requested.
+Correctness: 0%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/project2.py
+suggestions for improvement:
+- The code implements a Rock Paper Scissors game, which, while using some of the listed concepts (OOP, Random Number Generation), does not address the core problem of creating a `Deck` and `Card` class as described in Exercise 2. It also doesn't use Lists as a data structure as specifically requested. Exercise 1 asks about OOP concepts, which is related to the code.
+- The code could be improved by directly addressing the `Deck` and `Card` class creation problem. This would involve creating these classes, implementing the shuffle and deal methods, and using lists to store the cards.
+Correctness: 60%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/words.txt
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----
