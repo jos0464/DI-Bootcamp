@@ -1,0 +1,11 @@
+URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day4/ExercicesXP/exercices.py
+suggestions for improvement:
+- The code is well-structured and addresses both exercises effectively.
+- Consider separating the exercises into different files for better organization, especially as the code grows.
+- Using a constant for the default file path in `get_random_sentence` would improve maintainability.
+Brief justification:
+- correctness: The code accurately implements both the random sentence generator and the JSON manipulation exercises, following all instructions in the chapter content. Exercise 1 correctly handles file reading, random word selection, and user input validation. Exercise 2 correctly parses the JSON string, accesses the nested salary, adds the birth_date, and saves the modified JSON to a file. The inclusion of additional exercises does not detract from the correctness of the solution to the stated exercises.
+- readability: The code is generally readable, with clear function names and comments. However, including all exercises in a single file makes it longer and slightly harder to navigate. Separating them would improve readability.
+- performance: The code's performance is adequate for the given tasks. The random sentence generation is efficient, and the JSON parsing and manipulation are also performant. Using list comprehension in `get_random_sentence` is a good choice for performance.
+- security: The code is reasonably secure. User input is validated in the random sentence generator to prevent excessively long sentences. The file handling in both exercises uses `with open()`, ensuring that files are properly closed, even if errors occur.
+
