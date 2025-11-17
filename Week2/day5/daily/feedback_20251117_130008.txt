@@ -1,0 +1,5 @@
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day5/daily/daily.py
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
