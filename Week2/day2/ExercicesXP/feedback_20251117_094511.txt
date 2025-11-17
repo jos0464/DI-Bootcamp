@@ -1,0 +1,12 @@
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day2/ExercicesXP/daily.py
+suggestions for improvement:
+- The provided code implements a pagination class, which is not relevant to the chapter's content (Inheritance, Class methods and attributes, Polymorphism, Exceptions, `super()` function).
+- The code is well-structured and functional for its intended purpose (pagination), but it does not address any of the concepts covered in the learning module.
+Correctness: 0%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day2/ExercicesXP/exercices.py
+suggestions for improvement:
+- Consider adding comments to the code to explain more complex logic.
+- Consider adding `isinstance` check inside `play()` method to be more robust.
+Correctness: 100%
+-----

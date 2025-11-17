@@ -1,0 +1,7 @@
+URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week1/day2/ExercisesXP/exercises.py
+Brief justification:
+- correctness: The code accurately addresses all the exercises, implementing the required functionalities for sets, tuples, lists, loops, and conditionals as described in each exercise's instructions. It correctly handles user input, performs calculations, and manipulates data structures as needed, fully aligning with the chapter content.
+- readability: The code is well-organized with clear comments explaining each exercise, making it easy to understand. Variable names are descriptive, and the code is consistently formatted.
+- performance: The code is efficient for the given tasks. It uses appropriate data structures and algorithms, and there are no obvious performance bottlenecks.
+- security: The code handles user input safely by validating the name input in Exercise 6 and converting age inputs to integers in Exercise 9, mitigating potential security risks.
+

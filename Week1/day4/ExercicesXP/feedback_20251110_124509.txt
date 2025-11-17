@@ -1,0 +1,10 @@
+URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week1/day4/ExercicesXP/exercices.py
+suggestions for improvement:
+- Consider using more descriptive variable names where appropriate, even though the existing names are generally clear.
+- The comments are in French, which might not be ideal for an English-speaking audience. Consider translating them or using English comments directly.
+Brief justification:
+- correctness: The code accurately and completely addresses all exercises outlined in the chapter content. Each function is defined as requested, uses parameters correctly, and produces the expected output. The logic for each exercise (random number generation, string formatting, list modification) is implemented flawlessly, aligning directly with the problem descriptions.
+- readability: The code is well-structured and easy to follow. Function names and variable names are generally descriptive. The use of docstrings enhances understanding.  The only minor readability issue is the use of French comments within the code, which could be improved for an English-speaking audience.
+- performance: The code demonstrates efficient use of Python's built-in functions and data structures. The loops and conditional statements are implemented without any obvious performance bottlenecks. The random number generation is efficient for the stated purpose.
+- security: The code doesn't involve any user input or external data sources, so security risks are minimal. There are no evident vulnerabilities in the code that could be exploited.
+

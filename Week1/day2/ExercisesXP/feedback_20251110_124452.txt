@@ -1,0 +1,11 @@
+URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week1/day2/ExercisesXP/daily.py
+suggestions for improvement:
+- The code is well-structured and addresses both challenges effectively.
+- Consider adding more comments to explain more complex logic within the loops, even though the current level is adequate.
+- The code includes basic input validation, but could be expanded for more robust error handling, especially regarding potential overflow issues with very large numbers in Challenge 1.
+Brief justification:
+- correctness: The code accurately implements both challenges as described in the prompt. Challenge 1 correctly calculates and outputs a list of multiples. Challenge 2 correctly removes consecutive duplicate letters from a user-provided string. The code addresses all requirements of the 'Multiples of a Number' and 'Remove Consecutive Duplicate Letters' challenges.
+- readability: The code is very readable, with clear variable names and comments explaining each step. The use of list comprehension in Challenge 1 and a clear loop in Challenge 2 enhances readability.
+- performance: The performance is very good for both challenges. List comprehension and string manipulation are efficient in Python.
+- security: The code includes basic input validation to handle non-integer inputs. However, more robust error handling (e.g., preventing excessively large number inputs that could cause memory issues) would improve the security.
+
