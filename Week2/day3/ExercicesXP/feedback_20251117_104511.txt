@@ -1,0 +1,12 @@
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day3/ExercicesXP/daily.py
+suggestions for improvement:
+- The code submission is for a 'Circle' class, which is completely unrelated to the exercises and topics covered in the provided chapter content (Dunder methods for a Currency class, Modules, string, datetime and faker modules).
+- The code should address the specific instructions of the Currency class, importing modules, string manipulation, date/time calculations, and faker module usage.
+Correctness: 0%
+-----
+URL: URL: https://github.com/jos0464/DI-Bootcamp/blob/main/Week2/day3/ExercicesXP/exercices.py
+suggestions for improvement:
+- Exercise 2 is missing; the provided code does not include the creation of `func.py` or the import statement in `exercise_one.py` as requested by the instructions.
+- Consider adding input validation or error handling for Exercise 6, specifically for the `minutes_lived` function, to ensure the birthdate string is in the expected format.  This enhances robustness.
+Correctness: 90%
+-----
