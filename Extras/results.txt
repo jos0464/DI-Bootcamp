@@ -1,0 +1,63 @@
+* Exercise 1: Concatenate lists
+Combined list: [1, 2, 3, 4, 5, 6]
+
+* Exercise 2: Range of numbers
+Multiples of 5 and 7: [1505, 1540, 1575, 1610, 1645, 1680, 1715, 1750, 1785, 1820, 1855, 1890, 1925, 1960, 1995, 2030, 2065, 2100, 2135, 2170, 2205, 2240, 2275, 2310, 2345, 2380, 2415, 2450, 2485]
+
+* Exercise 3: Check the index
+jose not found in the list.
+
+* Exercise 4: Greatest Number
+The greatest number is: 3
+
+* Exercise 5: The Alphabet
+a is a vowel
+b is a consonant
+c is a consonant
+d is a consonant
+e is a vowel
+f is a consonant
+g is a consonant
+h is a consonant
+i is a vowel
+j is a consonant
+k is a consonant
+l is a consonant
+m is a consonant
+n is a consonant
+o is a vowel
+p is a consonant
+q is a consonant
+r is a consonant
+s is a consonant
+t is a consonant
+u is a vowel
+v is a consonant
+w is a consonant
+x is a consonant
+y is a consonant
+z is a consonant
+
+* Exercise 6: Words and letters
+Letter 'V' not found in word 'jos'
+Letter 'V' not found in word 'jos'
+Letter 'V' not found in word 'jos'
+Letter 'V' not found in word 'jos'
+Letter 'V' not found in word 'jos'
+Letter 'V' not found in word 'jos'
+In word 'V', letter 'V' first occurs at index 0
+
+* Exercise 7: Min, Max, Sum
+Min: 1, Max: 1000000, Sum: 500000500000
+
+* Exercise 8: List and Tuple
+List: ['', '']
+Tuple: ('', '')
+
+* Exercise 9: Random number
+Guessed 4, Random 8 -> Lost
+Guessed 5, Random 9 -> Lost
+Guessed 6, Random 2 -> Lost
+Guessed 8, Random 5 -> Lost
+Guessed 9, Random 9 -> Winner!
+Guessed 9, Random 7 -> Lost

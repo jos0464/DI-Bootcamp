@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fonctions Python pour l'IA</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      padding: 40px;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      color: #0b7285;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+    }
+    th {
+      background: #0b7285;
+      color: white;
+      font-weight: 600;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f6f8;
+    }
+    tr:hover {
+      background-color: #e9f7fa;
+    }
+    .domain {
+      color: #0b7285;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fonctions et Outils Python Essentiels pour l’Intelligence Artificielle</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Domaine</th>
+        <th>Librairie principale</th>
+        <th>Fonctions / Méthodes clés</th>
+        <th>Rôle / Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="domain">Data Analytics</td>
+        <td>pandas</td>
+        <td>read_csv(), head(), describe(), groupby(), merge()</td>
+        <td>Manipulation et analyse de données tabulaires</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>numpy</td>
+        <td>array(), reshape(), mean(), std(), dot()</td>
+        <td>Calculs matriciels et statistiques de base</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>matplotlib / seaborn</td>
+        <td>plot(), hist(), heatmap()</td>
+        <td>Visualisation et exploration graphique</td>
+      </tr>
+      <tr>
+        <td class="domain">Préparation et nettoyage</td>
+        <td>sklearn.preprocessing</td>
+        <td>StandardScaler(), LabelEncoder(), OneHotEncoder()</td>
+        <td>Normalisation, encodage et transformation des données</td>
+      </tr>
+      <tr>
+        <td class="domain">Machine Learning</td>
+        <td>scikit-learn</td>
+        <td>train_test_split(), fit(), predict(), score()</td>
+        <td>Modélisation, entraînement et évaluation des modèles ML</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>GridSearchCV(), cross_val_score()</td>
+        <td>Optimisation d’hyperparamètres et validation croisée</td>
+      </tr>
+      <tr>
+        <td class="domain">Deep Learning</td>
+        <td>tensorflow / keras</td>
+        <td>Sequential(), Dense(), Conv2D(), LSTM(), fit()</td>
+        <td>Construction et entraînement de réseaux neuronaux</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>torch</td>
+        <td>Module, Linear(), ReLU(), backward(), step()</td>
+        <td>API flexible pour deep learning avec PyTorch</td>
+      </tr>
+      <tr>
+        <td class="domain">Computer Vision</td>
+        <td>opencv, torchvision, PIL</td>
+        <td>imread(), resize(), transform()</td>
+        <td>Traitement d’images, détection et classification visuelle</td>
+      </tr>
+      <tr>
+        <td class="domain">NLP (Langage Naturel)</td>
+        <td>nltk, spacy, transformers</td>
+        <td>tokenize(), lemmatize(), pipeline(), generate()</td>
+        <td>Prétraitement, analyse et génération de texte</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>sklearn.feature_extraction.text</td>
+        <td>CountVectorizer(), TfidfVectorizer()</td>
+        <td>Extraction de caractéristiques textuelles</td>
+      </tr>
+      <tr>
+        <td class="domain">Generative AI</td>
+        <td>transformers, openai</td>
+        <td>from_pretrained(), generate(), ChatCompletion.create()</td>
+        <td>Utilisation et génération via modèles de langage (LLMs)</td>
+      </tr>
+      <tr>
+        <td class="domain">RAG (Retrieval Augmented Generation)</td>
+        <td>langchain, faiss, chromadb</td>
+        <td>VectorStore(), similarity_search(), Retriever()</td>
+        <td>Combinaison de recherche contextuelle et génération</td>
+      </tr>
+      <tr>
+        <td class="domain">Reinforcement Learning</td>
+        <td>gym, stable-baselines3</td>
+        <td>env.reset(), step(), learn()</td>
+        <td>Environnements RL et agents intelligents</td>
+      </tr>
+      <tr>
+        <td class="domain">Maths & Optimisation</td>
+        <td>numpy.linalg, scipy.optimize</td>
+        <td>solve(), inv(), minimize()</td>
+        <td>Algèbre linéaire et optimisation</td>
+      </tr>
+      <tr>
+        <td class="domain">MLOps & Déploiement</td>
+        <td>mlflow, docker, fastapi</td>
+        <td>log_metric(), run(), app.post()</td>
+        <td>Suivi, automatisation et déploiement des modèles</td>
+      </tr>
+      <tr>
+        <td class="domain">Explainable AI (XAI)</td>
+        <td>shap, lime</td>
+        <td>shap_values(), explain_instance()</td>
+        <td>Interprétation et explication des modèles IA</td>
+      </tr>
+      <tr>
+        <td class="domain">Time Series</td>
+        <td>statsmodels, prophet</td>
+        <td>ARIMA(), Prophet()</td>
+        <td>Prévisions et analyse temporelle</td>
+      </tr>
+      <tr>
+        <td class="domain">AutoML</td>
+        <td>auto-sklearn, TPOT</td>
+        <td>fit(), export()</td>
+        <td>Automatisation de la recherche de modèles optimaux</td>
+      </tr>
+      <tr>
+        <td class="domain">Big Data</td>
+        <td>pyspark, dask</td>
+        <td>read_parquet(), map_partitions()</td>
+        <td>Traitement de grands ensembles de données</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

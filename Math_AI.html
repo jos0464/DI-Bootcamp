@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Fiche Formules Complète IA / ML / DL</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
+    h1, h2 { color: #333; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 30px; background-color: #fff; }
+    th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; vertical-align: top; }
+    th { background-color: #D0E8C0; }
+    .section th { background-color: #C6D7F5; }
+    .loss th { background-color: #F5D6C6; }
+    .eval th { background-color: #F5F5C6; }
+    code { background-color: #eee; padding: 2px 4px; border-radius: 4px; display:block; }
+</style>
+</head>
+<body>
+<h1>📊 Fiche Formules Complète IA / ML / DL — FR / EN / Python / Utilité / Domaine</h1>
+
+<h2>1️⃣ Régression Linéaire</h2>
+<table class="section">
+<thead>
+<tr>
+<th>Concept (FR)</th>
+<th>Term (EN)</th>
+<th>Formule</th>
+<th>Python</th>
+<th>Utilité / Explication</th>
+<th>Domaine</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Modèle prédiction (simple)</td><td>Prediction Model (Simple)</td><td>ŷ = w·x + b</td><td><code>y_pred = w*x + b</code></td><td>Prédire la valeur d'une variable cible à partir d'une seule variable</td><td>ML / IA</td></tr>
+<tr><td>Modèle prédiction (multiple)</td><td>Prediction Model (Multiple)</td><td>ŷ = w₁x₁ + w₂x₂ + ... + b</td><td><code>y_pred = np.dot(X, w) + b</code></td><td>Prédire la valeur d'une cible à partir de plusieurs variables</td><td>ML / IA</td></tr>
+<tr><td>Erreur résiduelle</td><td>Residual Error</td><td>eᵢ = yᵢ - ŷᵢ</td><td><code>residual = y_true - y_pred</code></td><td>Mesurer l'écart entre la prédiction et la valeur réelle</td><td>ML / IA</td></tr>
+<tr><td>MSE</td><td>Mean Squared Error</td><td>MSE = 1/n Σ(yᵢ - ŷᵢ)²</td><td><code>mse = np.mean((y_true - y_pred)**2)</code></td><td>Quantifier l'erreur moyenne au carré</td><td>ML / DL</td></tr>
+<tr><td>MAE</td><td>Mean Absolute Error</td><td>MAE = 1/n Σ|yᵢ - ŷᵢ|</td><td><code>mae = np.mean(np.abs(y_true - y_pred))</code></td><td>Erreur moyenne absolue, moins sensible aux valeurs extrêmes</td><td>ML / DL</td></tr>
+<tr><td>RMSE</td><td>Root Mean Squared Error</td><td>RMSE = √MSE</td><td><code>rmse = np.sqrt(np.mean((y_true - y_pred)**2))</code></td><td>Erreur standard, même unité que les données</td><td>ML / DL</td></tr>
+<tr><td>Fonction de coût</td><td>Cost / Loss Function</td><td>J(w,b) = 1/2n Σ(yᵢ - ŷᵢ)²</td><td><code>loss = 0.5*np.mean((y_true - y_pred)**2)</code></td><td>Évaluer la performance globale du modèle</td><td>ML / DL</td></tr>
+</tbody>
+</table>
+
+<h2>2️⃣ Descente de Gradient / Optimisation</h2>
+<table class="loss">
+<thead>
+<tr>
+<th>Concept (FR)</th>
+<th>Term (EN)</th>
+<th>Formule</th>
+<th>Python</th>
+<th>Utilité / Explication</th>
+<th>Domaine</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Gradient (partiel)</td><td>Partial Gradient</td><td>∂J/∂w = -1/n Σ(yᵢ - ŷᵢ)xᵢ ; ∂J/∂b = -1/n Σ(yᵢ - ŷᵢ)</td><td><code>dw = -(1/n)*np.sum((y_true - y_pred)*x)<br>db = -(1/n)*np.sum(y_true - y_pred)</code></td><td>Indique la direction et l'ampleur du changement des paramètres</td><td>ML / DL</td></tr>
+<tr><td>Descente de gradient</td><td>Gradient Descent</td><td>w = w - α ∂J/∂w ; b = b - α ∂J/∂b</td><td><code>w = w - alpha*dw ; b = b - alpha*db</code></td><td>Optimiser les paramètres pour réduire la perte</td><td>ML / DL</td></tr>
+<tr><td>Taux d’apprentissage</td><td>Learning Rate</td><td>α</td><td><code>alpha = 0.01</code></td><td>Contrôle la vitesse de mise à jour des paramètres</td><td>ML / DL</td></tr>
+<tr><td>Hyperparamètres</td><td>Hyperparameters</td><td>Paramètres fixés avant entraînement</td><td><code># alpha, iterations</code></td><td>Influencent la vitesse et la qualité de l'apprentissage</td><td>ML / DL</td></tr>
+</tbody>
+</table>
+
+<h2>3️⃣ Statistiques de base et avancées</h2>
+<table class="eval">
+<thead>
+<tr>
+<th>Concept (FR)</th>
+<th>Term (EN)</th>
+<th>Formule</th>
+<th>Python</th>
+<th>Utilité / Explication</th>
+<th>Domaine</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Moyenne</td><td>Mean</td><td>x̄ = 1/n Σxᵢ</td><td><code>mean = np.mean(x)</code></td><td>Valeur centrale d'un jeu de données</td><td>ML / IA</td></tr>
+<tr><td>Variance</td><td>Variance</td><td>Var(X) = 1/n Σ(xᵢ - x̄)²</td><td><code>var = np.var(x)</code></td><td>Mesure de dispersion autour de la moyenne</td><td>ML / IA</td></tr>
+<tr><td>Écart-type</td><td>Standard Deviation</td><td>σ = √Var(X)</td><td><code>std = np.std(x)</code></td><td>Dispersion exprimée dans la même unité que les données</td><td>ML / IA</td></tr>
+<tr><td>Covariance</td><td>Covariance</td><td>Cov(X,Y) = 1/n Σ(xᵢ - x̄)(yᵢ - ȳ)</td><td><code>cov = np.mean((x - np.mean(x))*(y - np.mean(y)))</code></td><td>Mesure la relation linéaire entre deux variables</td><td>ML / IA</td></tr>
+<tr><td>Coefficient corrélation</td><td>Correlation Coefficient</td><td>r = Cov(X,Y)/(σₓσᵧ)</td><td><code>r = np.corrcoef(x,y)[0,1]</code></td><td>Force et direction de la relation linéaire</td><td>ML / IA</td></tr>
+<tr><td>Médiane</td><td>Median</td><td>valeur qui sépare la moitié supérieure et inférieure des données</td><td><code>median = np.median(x)</code></td><td>Centre des données, moins sensible aux valeurs extrêmes</td><td>ML / IA</td></tr>
+<tr><td>Mode</td><td>Mode</td><td>valeur la plus fréquente</td><td><code>from scipy import stats<br>mode_val = stats.mode(x)</code></td><td>Valeur la plus fréquente</td><td>ML / IA</td></tr>
+<tr><td>Quantile</td><td>Quantile</td><td>x_q tel que P(X ≤ x_q) = q</td><td><code>quantile_25 = np.quantile(x, 0.25)</code></td><td>Divise les données en intervalles égaux</td><td>ML / IA</td></tr>
+<tr><td>Percentile</td><td>Percentile</td><td>pᵢ = valeur en dessous de laquelle i% des données se trouvent</td><td><code>percentile_90 = np.percentile(x, 90)</code></td><td>Identifie la position d’une donnée dans la distribution</td><td>ML / IA</td></tr>
+<tr><td>Asymétrie</td><td>Skewness</td><td>Skew = E[(X - μ)³] / σ³</td><td><code>from scipy.stats import skew<br>skew_val = skew(x)</code></td><td>Mesure la symétrie de la distribution</td><td>ML / IA</td></tr>
+<tr><td>Aplatissement</td><td>Kurtosis</td><td>Kurt = E[(X - μ)⁴] / σ⁴</td><td><code>from scipy.stats import kurtosis<br>kurt_val = kurtosis(x)</code></td><td>Indique si la distribution est pointue ou aplatie</td><td>ML / IA</td></tr>
+</tbody>
+</table>
+
+<h2>4️⃣ Régression Logistique / Classification</h2>
+<table class="section">
+<thead>
+<tr>
+<th>Concept (FR)</th>
+<th>Term (EN)</th>
+<th>Formule</th>
+<th>Python</th>
+<th>Utilité / Explication</th>
+<th>Domaine</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Hypothèse Sigmoïde</td><td>Sigmoid Hypothesis</td><td>ŷ = 1 / (1 + e^(- (w·x + b)))</td><td><code>y_pred = sigmoid(np.dot(X, w) + b)</code></td><td>Calcul de la probabilité d’appartenance à une classe</td><td>ML / DL</td></tr>
+<tr><td>Fonction de coût logistique</td><td>Log Loss</td><td>J(w,b) = -1/n Σ [y log(ŷ) + (1-y) log(1-ŷ)]</td><td><code>loss = -np.mean(y*np.log(y_pred)+(1-y)*np.log(1-y_pred))</code></td><td>Mesure l’erreur pour les modèles de classification binaire</td><td>ML / DL</td></tr>
+</tbody>
+</table>
+
+<h2>5️⃣ Réseaux de Neurones / Deep Learning</h2>
+<table class="section">
+<thead>
+<tr>
+<th>Concept (FR)</th>
+<th>Term (EN)</th>
+<th>Formule</th>
+<th>Python</th>
+<th>Utilité / Explication</th>
+<th>Domaine</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Perceptron</td><td>Perceptron</td><td>y = f(Σ wᵢxᵢ + b)</td><td><code>y = activation(np.dot(W, X) + b)</code></td><td>Unité de base d’un réseau de neurones</td><td>DL</td></tr>
+<tr><td>Activation Sigmoïde</td><td>Sigmoid Activation</td><td>σ(z) = 1 / (1 + e^-z)</td><td><code>sigmoid = 1/(1+np.exp(-z))</code></td><td>Transforme la sortie en probabilité</td><td>DL</td></tr>
+<tr><td>Activation ReLU</td><td>ReLU Activation</td><td>f(z) = max(0,z)</td><td><code>relu = np.maximum(0, z)</code></td><td>Active uniquement les valeurs positives</td><td>DL</td></tr>
+<tr><td>Softmax</td><td>Softmax</td><td>σ(zᵢ) = e^(zᵢ)/Σ e^(zⱼ)</td><td><code>softmax = np.exp(z)/np.sum(np.exp(z))</code></td><td>Convertit vecteur en probabilités pour classification multi-classes</td><td>DL</td></tr>
+<tr><td>Cross-Entropy</td><td>Cross-Entropy</td><td>CE = - Σ y log(ŷ)</td><td><code>loss = -np.sum(y_true*np.log(y_pred))</code></td><td>Fonction de perte pour classification multi-classes</td><td>DL</td></tr>
+<tr><td>Backpropagation</td><td>Backpropagation</td><td>Δw = -α ∂J/∂w</td><td><code>w = w - alpha*dw</code></td><td>Algorithme pour ajuster les poids du réseau</td><td>DL</td></tr>
+</tbody>
+</table>
+</body>
+</html>
