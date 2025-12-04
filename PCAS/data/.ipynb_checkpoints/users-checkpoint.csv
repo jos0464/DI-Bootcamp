@@ -1,0 +1,51 @@
+name,age,interests,activity_log
+User1,41,"[np.str_('science'), np.str_('music')]","['Activity 7', 'Activity 7', 'Activity 7']"
+User2,51,[np.str_('music')],"['Activity 4', 'Activity 5', 'Activity 4']"
+User3,37,[np.str_('music')],"['Activity 7', 'Activity 9']"
+User4,43,[np.str_('technology')],"['Activity 9', 'Activity 5', 'Activity 5', 'Activity 5', 'Activity 3']"
+User5,42,[np.str_('art')],"['Activity 5', 'Activity 5', 'Activity 8', 'Activity 3']"
+User6,53,"[np.str_('art'), np.str_('gaming')]",['Activity 1']
+User7,53,"[np.str_('science'), np.str_('art'), np.str_('technology')]","['Activity 5', 'Activity 6']"
+User8,52,"[np.str_('science'), np.str_('fitness')]","['Activity 1', 'Activity 3', 'Activity 6', 'Activity 5', 'Activity 2']"
+User9,33,[np.str_('science')],"['Activity 8', 'Activity 1', 'Activity 9', 'Activity 9', 'Activity 9']"
+User10,41,"[np.str_('fitness'), np.str_('music'), np.str_('technology')]","['Activity 4', 'Activity 4']"
+User11,38,[np.str_('music')],['Activity 6']
+User12,31,"[np.str_('science'), np.str_('fitness'), np.str_('gaming')]","['Activity 8', 'Activity 4']"
+User13,52,"[np.str_('science'), np.str_('technology'), np.str_('gaming')]","['Activity 7', 'Activity 9', 'Activity 8']"
+User14,39,"[np.str_('technology'), np.str_('fitness')]",['Activity 4']
+User15,31,"[np.str_('science'), np.str_('technology')]","['Activity 7', 'Activity 6', 'Activity 6']"
+User16,22,"[np.str_('music'), np.str_('science')]","['Activity 2', 'Activity 9']"
+User17,53,[np.str_('gaming')],"['Activity 1', 'Activity 7', 'Activity 8']"
+User18,39,"[np.str_('fitness'), np.str_('gaming')]",['Activity 7']
+User19,39,[np.str_('technology')],"['Activity 3', 'Activity 1', 'Activity 5', 'Activity 2']"
+User20,22,[np.str_('gaming')],"['Activity 9', 'Activity 9']"
+User21,21,"[np.str_('art'), np.str_('technology')]","['Activity 2', 'Activity 8']"
+User22,59,"[np.str_('gaming'), np.str_('music')]",['Activity 6']
+User23,50,"[np.str_('fitness'), np.str_('art')]",['Activity 3']
+User24,24,"[np.str_('science'), np.str_('fitness'), np.str_('music')]",['Activity 5']
+User25,47,"[np.str_('art'), np.str_('gaming')]","['Activity 4', 'Activity 1', 'Activity 1', 'Activity 8', 'Activity 2']"
+User26,57,"[np.str_('music'), np.str_('technology'), np.str_('science')]","['Activity 7', 'Activity 4', 'Activity 5']"
+User27,40,"[np.str_('technology'), np.str_('art'), np.str_('science')]","['Activity 1', 'Activity 5']"
+User28,46,[np.str_('technology')],"['Activity 2', 'Activity 8', 'Activity 2']"
+User29,25,"[np.str_('science'), np.str_('technology'), np.str_('fitness')]","['Activity 6', 'Activity 9', 'Activity 6', 'Activity 7']"
+User30,43,[np.str_('art')],"['Activity 2', 'Activity 5', 'Activity 8', 'Activity 7']"
+User31,22,"[np.str_('music'), np.str_('fitness'), np.str_('art')]",['Activity 3']
+User32,37,"[np.str_('science'), np.str_('fitness'), np.str_('music')]","['Activity 8', 'Activity 8']"
+User33,46,"[np.str_('technology'), np.str_('gaming')]","['Activity 7', 'Activity 7', 'Activity 9', 'Activity 7']"
+User34,31,[np.str_('gaming')],"['Activity 3', 'Activity 6', 'Activity 5', 'Activity 3', 'Activity 1']"
+User35,23,[np.str_('music')],"['Activity 8', 'Activity 3', 'Activity 9', 'Activity 5', 'Activity 8']"
+User36,36,[np.str_('technology')],['Activity 3']
+User37,45,"[np.str_('gaming'), np.str_('music')]","['Activity 9', 'Activity 4', 'Activity 5', 'Activity 2', 'Activity 8']"
+User38,46,"[np.str_('science'), np.str_('art'), np.str_('technology')]","['Activity 8', 'Activity 9', 'Activity 8', 'Activity 4']"
+User39,38,"[np.str_('music'), np.str_('gaming')]","['Activity 4', 'Activity 6', 'Activity 8', 'Activity 4']"
+User40,24,[np.str_('technology')],"['Activity 1', 'Activity 2', 'Activity 1']"
+User41,31,[np.str_('music')],"['Activity 9', 'Activity 7', 'Activity 9']"
+User42,38,[np.str_('music')],"['Activity 5', 'Activity 7']"
+User43,39,"[np.str_('technology'), np.str_('music')]","['Activity 6', 'Activity 8', 'Activity 8']"
+User44,26,[np.str_('music')],"['Activity 4', 'Activity 2']"
+User45,43,"[np.str_('technology'), np.str_('science'), np.str_('music')]","['Activity 6', 'Activity 5', 'Activity 2', 'Activity 9', 'Activity 1']"
+User46,24,[np.str_('gaming')],"['Activity 7', 'Activity 7', 'Activity 8', 'Activity 4', 'Activity 7']"
+User47,22,"[np.str_('music'), np.str_('science')]","['Activity 4', 'Activity 3', 'Activity 6', 'Activity 9', 'Activity 7']"
+User48,25,"[np.str_('art'), np.str_('music'), np.str_('science')]",['Activity 8']
+User49,34,"[np.str_('fitness'), np.str_('music'), np.str_('science')]","['Activity 1', 'Activity 1', 'Activity 5', 'Activity 7']"
+User50,54,"[np.str_('art'), np.str_('technology')]","['Activity 7', 'Activity 4', 'Activity 2']"
